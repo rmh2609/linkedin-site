@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
+
+
+
+*{
+padding: 0;
+margin: 0;
+
+box-sizing: border-box;
+-webkit-font-smoothing: antialiased;
+}
+header{
+background-color: var(--bgDark);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
+}
+header nav .left a{
+color: white;
+text-decoration: none;
+margin-right: 2rem;
+text-transform: uppercase;
+transition: all .2s ease;
+}
+header nav .left a:hover{
+color: white;
+}
+header nav {
+padding: 2rem 0;
+}
+header nav .logo{
+margin-right: 3rem;
+height: 10vh;
+width: 10vw;
+}
+
+body{
+font-family: 'Poppins', sans-serif;
+background-image: url("chicago skyline large.jpg");
+
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.container{
+max-width: 1152px;
+padding: 0 15px;
+margin: 0 auto;
+}
+.hero{
+padding-top: 2rem;
+padding-bottom: 3rem;
+}
+.hero .left img{
+width: 400px;
+}
+.hero .right {
+color: white;
+margin-top: -7rem;
+}
+.hero .right h6{
+font-size: 1.6rem;
+color: white;
+margin-bottom: 0.5rem;
+}
+.hero .right h1{
+font-size: 4rem;
+font-weight: 100;
+line-height: 1.2;
+margin-bottom: 2rem;
+}
+.hero .right h1 span{
+color: var(--primary);
+}
+.hero .right p{
+line-height: 1.9;
+margin-bottom: 2rem;
+}
+
+.flex{
+display: flex;
+}
+.items-centre{
+align-items: center;
+}
+.justify-between{
+justify-content: space-between;
+}
+.justify-center{
+justify-content: center;
+}
+.justify-right{
+justify-content: right;
+}
+.btn{
+padding: 0.6rem 2rem;
+font-size: 1rem;
+font-weight: 600;
+border: 2px solid transparent;
+outline: none;
+cursor: pointer;
+text-transform: uppercase;
+transition: all .2s ease;
+}
+.btn-primary{
+background-color: var(--primary);
+color: var(--secondary);
+margin-top: -15rem;
+}
+.btn-primary:hover{
+background: transparent;
+border-color: var(--primary);
+color: var(--primary);
+}
+.flex-1{
+flex: 1;
+}
+.btn-secondary{
+background: transparent;
+color: var(--primary);
+border-color: var(--primary);
+}
+.btn-secondary:hover{
+background: var(--primary);
+color: var(--secondary);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url(img/bg.png);
+  background-size: cover;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+
+}
+.logo {
+  max-height: 60px;
+}
+nav ul li {
+  list-style: none;
+
+  display: inline-block;
+  padding: 10px 20px;
+}
+nav ul li a {
+  color: white;
+  position: relative;
+  padding: 5px 0;
+}
+nav ul li a:hover {
+  color: #fd4766;
+}
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #fd4766;
+  transition: 0.3s;
+  bottom: 0;
+}
+nav ul li a:hover:after {
+  width: 100%;
+}
+.btn {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 40px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  background-size: 152% 100%;
+  background: #fd4766;
+  border: 2px solid #fd4766;
+}
+.btn:hover {
+  background: transparent;
+  border-color: #fd4766;
+  color: #fd4766;
+}
+.content {
+  position: absolute;
+  top: 35%;
+  left: 8%;
+}
+.content .title {
+  color: #0a0a0a;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: inline-block;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    120deg,
+    #1c99fe 20.69%,
+    #7644ff 50.19%,
+    #fd4766 79.69%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content h1 {
+  color: white;
+  font-size: 75px;
+  font-weight: 900;
+  line-height: 90px;
+  text-transform: inherit;
+  width: 70%;
+}
+.content h1 span {
+  color: #fd4766;
+}
+.content p {
+  width: 55%;
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 25px;
+  margin-bottom: 30px;
+
+}
